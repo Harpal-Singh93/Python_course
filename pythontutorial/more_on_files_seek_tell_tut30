@@ -1,0 +1,21 @@
+ # use of tell() and seek() function
+# tell function will determine the position of file handle
+# f=open('new file.txt')
+# print(f.tell())
+# print(f.readline())
+# print(f.tell())
+# print(f.readline())
+# print(f.tell())
+# print(f.readline())
+# print(f.tell())
+# f.close()
+
+# seek function is used to read from a  particular location
+f=open('new file.txt')
+f.seek(2)
+print(f.readline())
+f.seek(10)
+print(f.readline())
+f.seek(20)
+print(f.readline())
+f.close()
